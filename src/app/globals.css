@@ -3,19 +3,24 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --electric-blue: #00ffff;
+  --neon-purple: #bc13fe;
+  --bright-green: #39ff14;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background: linear-gradient(to right, #1a1a2e, #16213e);
 }
+
+.gradient-text {
+  background: linear-gradient(45deg, var(--electric-blue), var(--neon-purple), var(--bright-green));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow {
+  box-shadow: 0 0 10px var(--electric-blue), 0 0 20px var(--neon-purple), 0 0 30px var(--bright-green);
+}
+
