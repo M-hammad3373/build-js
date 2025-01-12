@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Hero() {
+export default function Hero(now = Date.now()) {
   return (
     <section className="py-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
